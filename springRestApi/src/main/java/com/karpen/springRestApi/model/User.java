@@ -29,5 +29,4 @@ public class User extends BaseEntity {
     @OneToOne
     private Account account;
 
-
 }

@@ -31,7 +31,9 @@ create table if not exists user
         primary key,
     first_name varchar(100) null,
     last_name varchar(100) null,
-    account_id bigint null
+    account_id bigint null,
+    constraint FKc3b4xfbq6rbkkrddsdum8t5f0
+        foreign key (account_id) references account (id)
 );
 
 create table if not exists user_event_list

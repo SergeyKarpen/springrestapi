@@ -7,7 +7,6 @@ import javax.persistence.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@Data
 @Table(name = "account")
 public class Account extends BaseEntity{
 
@@ -17,4 +16,5 @@ public class Account extends BaseEntity{
     @Column(name = "account_status")
     @Enumerated(EnumType.STRING)
     private AccountStatus account_status;
+
 }

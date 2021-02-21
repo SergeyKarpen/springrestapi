@@ -1,8 +1,9 @@
-package com.karpen.springRestApi.model;
+package com.karpen.springRestApi.model.security;
 
 public enum Permission {
-    DEVELOPERS_WRITE("developer:write"),
-    DEVELOPERS_READ("developer:read")
+    WHEN_YOU_ADMIN("admin"),
+    WHEN_YOU_USER("user"),
+    WHEN_YOU_MODERATOR("moderator")
     ;
 
     private final String permission;

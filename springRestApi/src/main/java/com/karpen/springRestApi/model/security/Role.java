@@ -1,14 +1,15 @@
-package com.karpen.springRestApi.model;
+package com.karpen.springRestApi.model.security;
 
+import com.karpen.springRestApi.model.security.Permission;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public enum Role {
-    ADMIN(Set.of(Permission.DEVELOPERS_READ, Permission.DEVELOPERS_WRITE)),
-    USER(Set.of(Permission.DEVELOPERS_READ)),
-    MODERATOR(Set.of(Permission.DEVELOPERS_READ, Permission.DEVELOPERS_WRITE));
+    ADMIN(Set.of(Permission.WHEN_YOU_ADMIN)),
+    USER(Set.of(Permission.WHEN_YOU_USER)),
+    MODERATOR(Set.of(Permission.WHEN_YOU_MODERATOR));
 
     private final Set<Permission> permissionSet;
 
